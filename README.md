@@ -12,7 +12,7 @@ This website is a **frontend-only** project that mimics the official Apple iPhon
 - **Responsive design** for mobile, tablet, and desktop
 - **Smooth animations & transitions** for a modern look
 - **Interactive elements** like buttons and hover effects
-
+- **3D Models** implementation
 ---
 
 ## 🛠️ Technologies Used
