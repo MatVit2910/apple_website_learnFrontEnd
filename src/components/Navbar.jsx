@@ -18,14 +18,14 @@ const Navbar = () => {
         </div>
         <div className="flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1">
           <img
-            className="hover:scale-125"
+            className="hover:scale-125 cursor-pointer"
             src={searchImg}
             alt="Search"
             width={18}
             height={18}
           />
           <img
-            className="hover:scale-125"
+            className="hover:scale-125 cursor-pointer"
             src={bagImg}
             alt="Bag"
             width={18}
