@@ -5,7 +5,7 @@ This project is a front-end learning exercise where I recreated the iPhone 15 pr
 ---
 
 ## 📌 Project Overview
-This website is a **frontend-only** project that mimics the official Apple iPhone 15 product page. The goal was to practice responsive design, animations, and layout structuring, as well as the use of modern frameworks and libraries like React, Tailwind CSS, GSAP, and Three.js
+This website is a **frontend-only** project that mimics the official Apple iPhone 15 product page. The goal was to practice responsive design, animations, and layout structuring, as well as the use of modern frameworks and libraries like React, Tailwind CSS, GSAP, and Three.js.
 
 ### 🔥 Features Implemented
 - **Pixel-perfect UI** inspired by Apple's iPhone 15 page
@@ -29,11 +29,11 @@ This website is a **frontend-only** project that mimics the official Apple iPhon
 ## 🚀 How to Run the Project
 1. Clone the repository:
    ```bash
-   git clone https://github.com/MatVit2910/apple_website_learnReact.git
+   git clone https://github.com/MatVit2910/apple_website_learnFrontEnd.git
    ```
 2. Navigate to the project folder:
    ```bash
-   cd apple_website_learnReact
+   cd apple_website_learnFrontEnd
    ```
 3. Install dependencies:
    ```bash
