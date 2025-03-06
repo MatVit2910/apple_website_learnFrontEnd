@@ -11,7 +11,7 @@ const VideoCarousel = () => {
   const videoSpanRef = useRef([]);
   const videoDivRef = useRef([]);
 
-  const [video, setvideo] = useState({
+  const [video, setVideo] = useState({
     isEnd: false,
     startPlay: false,
     videoId: 0,
@@ -32,7 +32,7 @@ const VideoCarousel = () => {
         toggleActions: "restart none none none",
       },
       onComplete: () => {
-        setvideo((prevVideo) => ({
+        setVideo((prevVideo) => ({
           ...prevVideo,
           startPlay: true,
           isPlaying: true,
@@ -109,30 +109,30 @@ const VideoCarousel = () => {
   const handleProcess = (type, i) => {
     switch (type) {
       case "video-end":
-        setvideo((prevVideo) => ({
+        setVideo((prevVideo) => ({
           ...prevVideo,
           isEnd: true,
           videoId: i + 1,
         }));
         break;
       case "video-last":
-        setvideo((prevVideo) => ({ ...prevVideo, isLastVideo: true }));
+        setVideo((prevVideo) => ({ ...prevVideo, isLastVideo: true }));
         break;
       case "video-reset":
-        setvideo((prevVideo) => ({
+        setVideo((prevVideo) => ({
           ...prevVideo,
           isLastVideo: false,
           videoId: 0,
         }));
         break;
       case "play":
-        setvideo((prevVideo) => ({
+        setVideo((prevVideo) => ({
           ...prevVideo,
           isPlaying: !prevVideo.isPlaying,
         }));
         break;
       case "pause":
-        setvideo((prevVideo) => ({
+        setVideo((prevVideo) => ({
           ...prevVideo,
           isPlaying: !prevVideo.isPlaying,
         }));
@@ -156,7 +156,7 @@ const VideoCarousel = () => {
                   className={`${list.id == 2 && "translate-x-4"} pointer-events-none`} 
                   ref={(element) => (videoRef.current[i] = element)}
                   onPlay={() => {
-                    setvideo((prevVideo) => ({
+                    setVideo((prevVideo) => ({
                       ...prevVideo,
                       isPlaying: true,
                     }));
