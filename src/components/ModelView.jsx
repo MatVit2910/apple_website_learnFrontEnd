@@ -28,9 +28,9 @@ const ModelView = ({
       >
         <Suspense
           fallback={
-            <>
+            <Html>
               <div>Loading</div>
-            </>
+            </Html>
           }
         >
           <IPhone></IPhone>
