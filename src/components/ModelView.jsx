@@ -1,4 +1,4 @@
-import { OrbitControls, PerspectiveCamera, View } from "@react-three/drei";
+import { PerspectiveCamera, View } from "@react-three/drei";
 import Lights from "./Lights";
 import { Suspense } from "react";
 import IPhone from "./IPhone";
@@ -14,28 +14,16 @@ const ModelView = ({
 }) => {
   return (
     <View
+      index={index}
       id={gsapType}
-      className={`w-full h-full ${index == 2 ? "right-[-100%]" : ""}`}
+      className={`w-full h-full absolute ${index === 2 ? "right-[-100%]" : ""}`}
     >
       <ambientLight intensity={0.3} />
-      <PerspectiveCamera makeDefault position={[0, 0, 4]} />
+      <PerspectiveCamera makeDefault={true} position={[0, 0, 4]} />
       <Lights />
-      <OrbitControls />
-      <group
-        ref={groupRef}
-        name={`${index == 1 ? "small" : "large"}`}
-        position={[0, 0, 0]}
-      >
-        <Suspense
-          fallback={
-            <Html>
-              <div>Loading</div>
-            </Html>
-          }
-        >
-          <IPhone></IPhone>
-        </Suspense>
-      </group>
+      <Suspense fallback={null}>
+        <IPhone />
+      </Suspense>
     </View>
   );
 };
