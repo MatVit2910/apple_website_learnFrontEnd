@@ -8,7 +8,7 @@ This project is a front-end learning exercise where I recreated the iPhone 15 pr
 This website is a **frontend-only** project that mimics the official Apple iPhone 15 product page. The goal was to practice responsive design, animations, and layout structuring, as well as the use of modern frameworks and libraries like React, Tailwind CSS, GSAP, and Three.js.
 
 ### 🔥 Features Implemented
-- **Pixel-perfect UI** inspired by Apple's iPhone 15 page
+- **UI** inspired by Apple's iPhone 15 page
 - **Responsive design** for mobile, tablet, and desktop
 - **Smooth animations & transitions** for a modern look
 - **Interactive elements** like buttons and hover effects
