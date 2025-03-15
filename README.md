@@ -49,7 +49,12 @@ This website is a **frontend-only** project that mimics the official Apple iPhon
 
 ## 📸 Preview
 ![Project Screenshot 1](https://github.com/MatVit2910/apple_website_learnFrontEnd/blob/8293036cc66fa3df47d30e393554a2bdc7562293/Img1.png)
+
 ![Project Screenshot 2](https://github.com/MatVit2910/apple_website_learnFrontEnd/blob/8293036cc66fa3df47d30e393554a2bdc7562293/Img2.png)
+
 ![Project Screenshot 3](https://github.com/MatVit2910/apple_website_learnFrontEnd/blob/8293036cc66fa3df47d30e393554a2bdc7562293/Img3.png)
+
 ![Project Screenshot 4](https://github.com/MatVit2910/apple_website_learnFrontEnd/blob/8293036cc66fa3df47d30e393554a2bdc7562293/Img4.png)
+
 ![Project Screenshot 5](https://github.com/MatVit2910/apple_website_learnFrontEnd/blob/8293036cc66fa3df47d30e393554a2bdc7562293/Img5.png)
+
