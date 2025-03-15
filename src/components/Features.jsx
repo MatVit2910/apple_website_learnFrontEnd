@@ -7,15 +7,16 @@ import gsap from "gsap";
 const Features = () => {
   const videoRef = useRef();
   useGSAP(() => {
-    gsap.to("exploreVideo", {
+    gsap.to("#exploreVideo", {
       scrollTrigger: {
-        trigger: "exploreVideo",
-        toggleActions: "restart reverse restart reverse",
-        start: "top 85%",
-        ...scrollProps,
+        trigger: "#exploreVideo",
+        toggleActions: "play pause reverse restart",
+        start: "-10% bottom",
+      },
+      onComplete: () => {
+        videoRef.current.play();
       },
     });
-    animateWithGsap("#exploreVideo");
     animateWithGsap("#features_title", { y: 0, opacity: 1 });
     animateWithGsap(
       ".g_grow",
